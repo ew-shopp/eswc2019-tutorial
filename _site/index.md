@@ -86,9 +86,6 @@ following:
     model with QMiner; deployment of the predictive model. *Duration:
     approx. 60 minutes*.
 
-**Prior art.** The tutorial is presented for the first time. No overlap
-with previous tutorials exists.
-
 Target audience
 ===============
 
@@ -160,21 +157,4 @@ design and adaptive deployment of applications in the cloud, and linked
 open data integration (PaaSage, MODAClouds, DaPaaS, proDataMarket).
 Nikolay Nikolov leads the development of the DataGraft platform, which
 is used as a core component in the EW-Shopp platform.\
-**Aljaž Košmerlj** (PhD) is a researcher in the Artificial Intelligence
-Laboratory at the Jožef Stefan Institute - the largest research
-institute in Slovenia. His background is in artificial intelligence and
-machine learning with his current work mostly focusing on text mining
-and natural language processing. He has extensive experience from work
-on research projects from both the European (FP7, H2020) and national
-levels as well as commercial projects for international clients
-(Bloomberg L.P.).
-
-Acknowledgements {#acknowledgements .unnumbered}
-================
-
-This tutorial is based on research carried out with funding from the
-European Union's Horizon 2020 research and innovation program under
-grant agreements No 732003 and No 732590.
-
-[^1]: Gil Press. Cleaning Big Data: Most Time-Consuming, Least Enjoyable
-    Data Science Task, Survey Says, Forbes, March 2016
+**Aljaž Košmerl
