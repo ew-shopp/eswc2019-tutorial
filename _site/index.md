@@ -86,32 +86,16 @@ following:
     model with QMiner; deployment of the predictive model. *Duration:
     approx. 60 minutes*.
 
-Target audience
+Intended audience
 ===============
 
-We expect to attract as audience three different profiles of
-stakeholders: i) researchers that have expertise in semantic
-technologies, and, in particular in their application to data
-integration problems (e.g., ontology matching, semantic reconciliation,
-table annotation), who will discover new industry-driven, real-world
-application scenarios for their research results; ii) researchers that
-have recently entered into the semantic web community, e.g., PhD
-students and postdocs, who will learn not only about new application
-scenarios, but also about challenging problems whose solution may have
-significant impact both in the industry as well as in other science
-fields, where analyses on top of semantically enriched data may be bring
-added value; iii) practitioners and workers in the industry field, who
-will learn about concrete use case for using semantic technology to
-support data-driven innovation at scale.
+You should attend the tutorial if you: 
+-  are a researcher working with Semantic Web Technology (e.g., ontology matching, semantic reconciliation, table annotation) looking to discover new industry-driven, real-world application scenarios for your work,
 
-To engage audience at the conference we will announce the tutorial
-through several channels using accounts from our research institutions
-and from the euBusinessGraph and EW-Shopp innovation projects. In
-addition to that, we will get endorsements from the projects' business
-partners and their communication channels. The material will be
-published online to foster attention by those who could not attend the
-tutorial, with particular reference to practitioners and industry
-employees.
+-  have recently entered into the Semantic Web community and want learn not only about new application scenarios, but also about challenging problems, the solution of which may have significant impact both in the industry as well as in other science fields, where analyses on top of semantically enriched data may be bring added value application scenarios for your work, 
+
+-  are a practitioner/worker in industry and want to learn about concrete use cases for using Semantic Web Technology to support data-driven innovation at scale.
+
 
 Speakers' profiles
 ==================
@@ -157,4 +141,16 @@ design and adaptive deployment of applications in the cloud, and linked
 open data integration (PaaSage, MODAClouds, DaPaaS, proDataMarket).
 Nikolay Nikolov leads the development of the DataGraft platform, which
 is used as a core component in the EW-Shopp platform.\
-**Aljaž Košmerl
+**Aljaž Košmerlj** (PhD) is a researcher in the Artificial Intelligence
+Laboratory at the Jožef Stefan Institute - the largest research
+institute in Slovenia. His background is in artificial intelligence and
+machine learning with his current work mostly focusing on text mining
+and natural language processing. He has extensive experience from work
+on research projects from both the European (FP7, H2020) and national
+levels as well as commercial projects for international clients
+(Bloomberg L.P.).
+
+
+
+[^1]: Gil Press. Cleaning Big Data: Most Time-Consuming, Least Enjoyable
+    Data Science Task, Survey Says, Forbes, March 2016

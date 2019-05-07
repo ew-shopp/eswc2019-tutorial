@@ -1,233 +1,351 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta charset='utf-8'>
+<html>
+    <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=fff72501c3a3b20bcb62a65c0a2cf2aa9cb90dda">
+    <title>Semantic Data Enrichment for Data Scientists</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Tutorial website for the ESWC2019 tutorial on semantic data enrichment for data scientists.">
+    <link rel="canonical" href="https://ew-shopp.github.io/eswc2019-tutorial//">
 
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Tutorial objectives and description | Semantic Data Enrichment for Data Scientists</title>
-<meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Tutorial objectives and description" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Tutorial website for the ESWC2019 tutorial on semantic data enrichment for data scientists" />
-<meta property="og:description" content="Tutorial website for the ESWC2019 tutorial on semantic data enrichment for data scientists" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Semantic Data Enrichment for Data Scientists" />
-<script type="application/ld+json">
-{"name":"Semantic Data Enrichment for Data Scientists","description":"Tutorial website for the ESWC2019 tutorial on semantic data enrichment for data scientists","@type":"WebSite","url":"http://localhost:4000/","headline":"Tutorial objectives and description","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+     <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-puzzle-piece"></i>  <span class="light">Semantic Data Enrichment</span> for Data Scientists
+                </a>
+            </div>
 
-<body>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#abstract">Abstract</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#program">Program</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#speakers">Speakers</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#resources">Resources</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+        <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="brand-heading">Semantic Data Enrichment for Data Scientists</h1>
+                        <p class="intro-text">Tutorial website for the ESWC2019 tutorial on semantic data enrichment for data scientists.<br>
+                        <a href="#abstract" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-            
-            <a id="forkme_banner" href="http://github.com/ew-shopp/eswc2019-tutorial">View on GitHub</a>
-            
+        <!-- Abstract Section -->
+    <section id="abstract" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Abstract</h2>
+                <p>Data science is in the hot spot today because data analyses play a fundamental 
+                    role in scientific studies and business decisions. However, it was estimated that about 80%
+                     of the effort in a data science project has to be dedicated to data preparation 1. 
+                     A data preparation task that is common in different industry-driven and science-driven application domains is data
+                      enrichment. Data enrichment is the task of enriching one main dataset, which describes a phenomenon of interest
+                       (usually by means of an initial set of variables), with information from third-party data sources, which contain
+                        additional variables to feed an analytical model. By using the enriched data, a data scientist can analyze the phenomenon
+                         under observation using a larger number of dimensions or train a predictive model using a richer set of features.</p>
+                <p>On the one hand, data enrichment for data science provides new high-impact application scenarios for exploiting the vast
+                     amount of information available in the Linked Open Data (LOD) cloud, either as direct source of additional information,
+                      or as a bridge for fetching data from information sources outside the LOD. On the other hand, data enrichment provides 
+                      several challenges for semantic data integration methodologies, revamping known problems under a different perspective, 
+                      e.g., taxonomy matching, and prompting genuinely new problems, e.g., interactive data reconciliation at scale.</p>
+                <h3> Objectives </h3>
+                <p>This tutorial has three main learning objectives: (L1) to provide an in-depth understanding of the role that semantics play
+                     in data enrichment for data science; (L2) to review advantages and limitations of tools for semantic enrichment available 
+                     today and of research work relevant to this specific task; (L3) to provide a practical dive into the creation of semantic 
+                     data enrichment transformations with Grafterizer and ASIA, two integrated tools that support the interactive specification 
+                     of these transformations and their scalable execution on large datasets, as well as into the usage of the enriched data to 
+                     train predictive models with the QMiner tool.</p>
+                <p>In relation to L1, we will use examples and use cases from data science projects developed in two industry-driven H2020 
+                    innovation projects, EW-Shopp (www.ew-shopp.eu) and euBusinessGraph (www.eubusinessgraph.eu), which target the development 
+                    of data-driven innovative services in domains such as digital marketing, eCommerce, and business reporting. In relation to
+                    L2, we will discuss the limitations of the approaches based on ad-hoc coding and other semantic agnostic data transformation 
+                    technologies to deliver data-scientist-friendly solutions. In addition we will discuss research work and prototypes developed 
+                    in the semantic web, which addressed some of the challenges that a data-scientist-friendly solution should solve, and their
+                     current limitations (e.g., scalability, support for interaction, etc.). In relation to L3, we will provide an hands-on session
+                      to enrich (anonimized) data from a digital marketing agency, which wants to estimate the impact of weather on the impressions 
+                      of the ads it manages in its campaigns. We will show how to enrich the source datasets with spatial coordinates extracted from
+                       Geonames, our "bridge", to eventually fetch data from a weather API. Finally, we will show how to use the enriched data to
+                        train a predictive model to estimate the impact of weather on the performance campaign.</p>
+            </div>
+        </div>
+    </section>
+        <!-- Program Section -->
+    <section id="program" class="container content-section text-center">
+            <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Program</h2>
+                        <p>The tutorial will be a half-day tutorial, requiring approximately three hours including presentations 
+                            and a hands-on section. The draft schedule proposed for the tutorial is the following:</p>
+                        <div class="list-group">
+                            <a class="list-group-item">
+                                <h4 class="list-group-item-heading">Data enrichment for data science 
+                                        <span class="badge"><i class="fa fa-clock-o"></i> 45 min</span>
+                                    </h4>
+                                <p class="list-group-item-text">Topics: challenges; semantics technologies as key enablers; 
+                                    analytics with enriched data: use cases from industry-driven data science projects.</p>
+                            </a>
+                            <a class="list-group-item">
+                                <h4 class="list-group-item-heading">State-of-the-art: semantic data enrichment for data science 
+                                    <span class="badge"><i class="fa fa-clock-o"></i> 45 min</span>
+                                </h4>
+                                <p class="list-group-item-text">Topics: semantic table annotation tools and techniques; doing it with OpenRefine: 
+                                    lessons learned and limitations; data enrichment with batch pipelines: lessons learned and limitations;
+                                     user-driven data enrichment at scale: the Grafterizer/ASIA approach; QMiner and data 
+                                     analytics on top of enriched data.</p>
+                            </a>
+                            <a class="list-group-item">
+                                <h4 class="list-group-item-heading">A toolkit for user-driven data enrichment at scale endowed with robust analytical modeling 
+                                        <span class="badge"><i class="fa fa-clock-o"></i> 30 min</span>
+                                    </h4>
+                                <p class="list-group-item-text">Topics: the Grafterizer/ASIA data transformation tool: cleaning, annotating 
+                                    and enriching data; QMiner: data analytics on top of enriched data.</p>
+                            </a>
+                            <a class="list-group-item">
+                                <h4 class="list-group-item-heading">Hands-on session: digital marketing data enrichment with weather data and analytical modelling 
+                                        <span class="badge"><i class="fa fa-clock-o"></i> 60 min</span>
+                                    </h4>
+                                <p class="list-group-item-text">Environment set up; design of the data transformation workflows with Grafterizer/ASIA; 
+                                    batch execution of the transformations on a larger data set; training the predictive model with QMiner; deployment 
+                                    of the predictive model.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    </section>
 
-            <h1 id="project_title">Semantic Data Enrichment for Data Scientists</h1>
-            <h2 id="project_tagline">Tutorial website for the ESWC2019 tutorial on semantic data enrichment for data scientists</h2>
 
-            
-        </header>
-    </div>
+        <!-- Audience Section -->
+    <section id="audience" class="content-section text-center">
+        <div class="audience-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2> Intended audience </h2>
+                    <p>You should attend the tutorial if you: </p>
+                    <ul>
+                        <li class="p-li">
+                            are a researcher working with Semantic Web Technology (e.g., ontology matching, semantic reconciliation, table annotation) 
+                            looking to discover new industry-driven, real-world application scenarios for your work,
+                        </li>
+                        <li class="p-li">
+                            have recently entered into the Semantic Web community and want learn not only about new application scenarios, 
+                            but also about challenging problems, the solution of which may have significant impact both in the industry as well 
+                            as in other science fields, where analyses on top of semantically enriched data may be bring added value application 
+                            scenarios for your work,
+                        </li>
+                        <li class="p-li">
+                            are a practitioner/worker in industry and want to learn about concrete use cases for using Semantic Web Technology to 
+                            support data-driven innovation at scale.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Contact Section -->
+    <section id="speakers" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Speakers</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <div class="single-team">
+                    <img src="img/palmonari.jpg" alt="">
+                    <div class="team-hover">
+                       <div class="team-content">
+                          <h4>Matteo Palmonari <span>PhD</span></h4>
+                          <ul>
+                            <li><a href="http://inside.disco.unimib.it/index.php/people/matteo-palmonari/" target="_blank"><i class="fa fa-link"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-md-2">
+                <div class="single-team">
+                    <img src="http://infinityflamesoft.com/html/halim-preview/assets/img/team/2.jpg" alt="">
+                    <div class="team-hover">
+                       <div class="team-content">
+                          <h4>Dumitru Roman <span>PhD</span></h4>
+                          <ul>
+                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-md-2">
+                <div class="single-team">
+                    <img src="img/cutrona.jpg" alt="">
+                    <div class="team-hover">
+                       <div class="team-content">
+                          <h4>Vincenzo Cutrona <span></span></h4>
+                          <ul>
+                             <li><a href="http://inside.disco.unimib.it/index.php/people/vincenzo-cutrona/" target="_blank"><i class="fa fa-link"></i></a></li>
+                             <li><a href="https://twitter.com/vcutrona9" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-md-2">
+                <div class="single-team">
+                    <img src="http://infinityflamesoft.com/html/halim-preview/assets/img/team/2.jpg" alt="">
+                    <div class="team-hover">
+                       <div class="team-content">
+                          <h4>Nikolay Nikolov <span></span></h4>
+                          <ul>
+                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-md-2">
+                <div class="single-team">
+                    <img src="http://infinityflamesoft.com/html/halim-preview/assets/img/team/2.jpg" alt="">
+                    <div class="team-hover">
+                       <div class="team-content">
+                          <h4>Aljaž Košmerlj <span>PhD</span></h4>
+                          <ul>
+                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+        <!-- Media Section -->
+    <section id="media" class="content-section text-center">
+        <div class="player-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Media</h2>
+                    <p> See our tools in action!</p>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/6b8t8iM_7ZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Download Section -->
+    <section id="resources" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Resources Download</h2>
+                    <p>Get all the datasets, slides and instructions you will need!</p>
+                    <a href="https://github.com/ew-shopp/eswc2019-tutorial" class="btn btn-lg">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object" src="https://europa.eu/european-union/sites/europaeu/files/docs/body/flag_yellow_low.jpg" height="64px" alt="...">     
+                </div>
+                <div class="media-body">
+                        This tutorial is based on research carried out with funding from the European Union's Horizon 2020 
+                            research and innovation program projects euBusinessGraph and EW-Shopp under grant agreements No 732003 and No 732590.
+                    </div>
+                <div class="media-right">
+                    <a href="https://www.ew-shopp.eu/" target="_blank">
+                        <img class="media-object" src="img/ews.png" height="64px" alt="...">
+                    </a>
+                </div>
+                <div class="media-right">
+                    <a href="http://eubusinessgraph.eu/" target="_blank">
+                        <img class="media-object" src="img/eubg.png" height="64px" alt="...">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-        <section id="main_content" class="inner">
-            <h1 id="tutorial-objectives-and-description">Tutorial objectives and description</h1>
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery.js"></script>
 
-<p>Data science is in the hot spot today because data analyses play a
-fundamental role in scientific studies and business decisions. However,
-it was estimated that about 80% of the effort in a data science project
-has to be dedicated to data preparation <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. A data preparation task
-that is common in different industry-driven and science-driven
-application domains is data enrichment. Data enrichment is the task of
-enriching one main dataset, which describes a phenomenon of interest
-(usually by means of an initial set of variables), with information from
-third-party data sources, which contain additional variables to feed an
-analytical model. By using the enriched data, a data scientist can
-analyze the phenomenon under observation using a larger number of
-dimensions or train a predictive model using a richer set of features.</p>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
 
-<p>On the one hand, data enrichment for data science provides new
-high-impact application scenarios for exploiting the vast amount of
-information available in the Linked Open Data (LOD) cloud, either as
-direct source of additional information, or as a bridge for fetching
-data from information sources outside the LOD. On the other hand, data
-enrichment provides several challenges for semantic data integration
-methodologies, revamping known problems under a different perspective,
-e.g., taxonomy matching, and prompting genuinely new problems, e.g.,
-interactive data reconciliation at scale.</p>
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
 
-<p>This tutorial has three main learning objectives: (L1) to provide an
-in-depth understanding of the role that semantics play in data
-enrichment for data science; (L2) to review advantages and limitations
-of tools for semantic enrichment available today and of research work
-relevant to this specific task; (L3) to provide a practical dive into
-the creation of semantic data enrichment transformations with
-Grafterizer and ASIA, two integrated tools that support the interactive
-specification of these transformations and their scalable execution on
-large datasets, as well as into the usage of the enriched data to train
-predictive models with the QMiner tool.</p>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-<p>In relation to L1, we will use examples and use cases from data science
-projects developed in two industry-driven H2020 innovation projects,
-EW-Shopp (<a href="www.ew-shopp.eu">www.ew-shopp.eu</a>) and euBusinessGraph
-(<a href="www.eubusinessgraph.eu">www.eubusinessgraph.eu</a>), which target the
-development of data-driven innovative services in domains such as
-digital marketing, eCommerce, and business reporting. In relation to L2,
-we will discuss the limitations of the approaches based on ad-hoc coding
-and other semantic agnostic data transformation technologies to deliver
-data-scientist-friendly solutions. In addition we will discuss research
-work and prototypes developed in the semantic web, which addressed
-<em>some</em> of the challenges that a data-scientist-friendly solution should
-solve, and their current limitations (e.g., scalability, support for
-interaction, etc.). In relation to L3, we will provide an hands-on
-session to enrich (anonimized) data from a digital marketing agency,
-which wants to estimate the impact of weather on the impressions of the
-ads it manages in its campaigns. We will show how to enrich the source
-datasets with spatial coordinates extracted from Geonames, our
-"bridge", to eventually fetch data from a weather API. Finally, we
-will show how to use the enriched data to train a predictive model to
-estimate the impact of weather on the performance campaign.</p>
-
-<p><strong>Length and draft schedule.</strong> The tutorial will be a half-day tutorial,
-requiring approximately three hours including presentations and a
-hands-on section. The draft schedule proposed for the tutorial is the
-following:</p>
-
-<ul>
-  <li>
-    <p><strong>Data enrichment for data science.</strong> Topics: challenges; semantics
-technologies as key enablers; analytics with enriched data: use
-cases from industry-driven data science projects. <em>Duration: approx.
-45 minutes</em>.</p>
-  </li>
-  <li>
-    <p><strong>State-of-the-art: semantic data enrichment for data science.</strong>
-Topics: semantic table annotation tools and techniques; doing it
-with OpenRefine: lessons learned and limitations; data enrichment
-with batch pipelines: lessons learned and limitations; user-driven
-data enrichment at scale: the Grafterizer/ASIA approach; QMiner and
-data analytics on top of enriched data. <em>Duration: approx. 45
-minutes</em>.</p>
-  </li>
-  <li>
-    <p><strong>A toolkit for user-driven data enrichment at scale endowed with
-robust analytical modeling.</strong> Topics: the Grafterizer/ASIA data
-transformation tool: cleaning, annotating and enriching data;
-QMiner: data analytics on top of enriched data. Approx. 30 minutes.</p>
-  </li>
-  <li>
-    <p><strong>Hands-on session: digital marketing data enrichment with weather
-data and analytical modelling.</strong> Environment set up; design of the
-data transformation workflows with Grafterizer/ASIA; batch execution
-of the transformations on a larger data set; training the predictive
-model with QMiner; deployment of the predictive model. <em>Duration:
-approx. 60 minutes</em>.</p>
-  </li>
-</ul>
-
-<h1 id="intended-audience">Intended audience</h1>
-
-<p>You should attend the tutorial if you:</p>
-<ul>
-  <li>
-    <p>are a researcher working with Semantic Web Technology (e.g., ontology matching, semantic reconciliation, table annotation) looking to discover new industry-driven, real-world application scenarios for your work,</p>
-  </li>
-  <li>
-    <p>have recently entered into the Semantic Web community and want learn not only about new application scenarios, but also about challenging problems, the solution of which may have significant impact both in the industry as well as in other science fields, where analyses on top of semantically enriched data may be bring added value application scenarios for your work,</p>
-  </li>
-  <li>
-    <p>are a practitioner/worker in industry and want to learn about concrete use cases for using Semantic Web Technology to support data-driven innovation at scale.</p>
-  </li>
-</ul>
-
-<h1 id="speakers-profiles">Speakers’ profiles</h1>
-
-<p><strong>Matteo Palmonari</strong> (PhD) is associate professor at University of
-Milan-Bicocca. His research interests concern semantics in data
-integration and artificial intelligence applications. He has been active
-in the ontology matching field, with a particular focus on interactive
-matching methods. He is general coordinator of EW-Shopp (Supporting
-Event and Weather-based Marketing Along the Customer Journey) and unit
-coordinator in euBusinessGraph, two H2020 projects where the concept of
-data enrichment is used to support data-driven innovation in the
-industry. Previously, he has been involved in several other European,
-Italian and US projects on semantic interoperability and data
-integration (COMSODE, SEEMP, SMART, CyberSEES).\
-<strong>Dumitru Roman</strong> (PhD) works as a Senior Research Scientist at SINTEF
-(Norway) – the largest independent research organization in
-Scandinavia. He has wide experience with initiating, leading, and
-carrying out data-driven and research-intensive projects, participating
-in dozens of large international projects during the past 14 years in
-which he has collaborated with various private companies, public sector
-organizations, universities, and research institutes. He is currently
-active in the data management field, focusing on innovation projects
-enabling data-driven business products and services. He has a PhD from
-University of Innsbruck (Austria) and currently holds an adjunct
-associate professorship at the University of Oslo (Norway).\
-<strong>Vincenzo Cutrona</strong> received the Master’s Degree in Computer Science
-from the University of Milano - Bicocca in 2016 and he is currently a
-Ph.D. student at the same University, since 2017. His current research
-activities focus on data integration and semantic enrichment for
-large-scale data analytics. He has experience in software development
-and he also worked with a few national companies as a consultant. In the
-last year, he was involved in an H2020 project as the main maintainer of
-ASIA, the semantic enrichment component in the EW-Shopp platform.\
-<strong>Nikolay Nikolov</strong> is a Research Scientist at SINTEF. He holds a joint
-Erasmus Mundus M.Sc. degree in Service Engineering from Stuttgart
-University, University of Crete and Tilburg University from 2014. He has
-been doing research and software development related to model-driven
-engineering in the context of cloud computing, big data and the Semantic
-Web since 2014. During the last four years, he has been involved in
-several European Union FP7 and Horizon 2020 projects with a focus on
-design and adaptive deployment of applications in the cloud, and linked
-open data integration (PaaSage, MODAClouds, DaPaaS, proDataMarket).
-Nikolay Nikolov leads the development of the DataGraft platform, which
-is used as a core component in the EW-Shopp platform.\
-<strong>Aljaž Košmerlj</strong> (PhD) is a researcher in the Artificial Intelligence
-Laboratory at the Jožef Stefan Institute - the largest research
-institute in Slovenia. His background is in artificial intelligence and
-machine learning with his current work mostly focusing on text mining
-and natural language processing. He has extensive experience from work
-on research projects from both the European (FP7, H2020) and national
-levels as well as commercial projects for international clients
-(Bloomberg L.P.).</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Gil Press. Cleaning Big Data: Most Time-Consuming, Least Enjoyable
-Data Science Task, Survey Says, Forbes, March 2016 <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-        </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-        <footer class="inner">
-            
-            
-            <p class="copyright">This tutorial is based on research carried out with funding from the European Union's Horizon 2020 research and innovation program projects 
-                <a href="http://eubusinessgraph.eu/">euBusinessGraph</a> and <a href="https://www.ew-shopp.eu/">EW-Shopp</a> under grant agreements No 732003 and No 732590.
-            </p>
-            
-        </footer>
-    </div>
-
-    
-</body>
-
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/grayscale.js"></script>
+    </body>
 </html>
