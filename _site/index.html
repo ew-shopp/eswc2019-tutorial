@@ -97,20 +97,29 @@
                       or as a bridge for fetching data from information sources outside the LOD. On the other hand, data enrichment provides 
                       several challenges for semantic data integration methodologies, revamping known problems under a different perspective, 
                       e.g., taxonomy matching, and prompting genuinely new problems, e.g., interactive data reconciliation at scale.</p>
-                <h3> Objectives </h3>
-                <p>This tutorial has three main learning objectives: (L1) to provide an in-depth understanding of the role that semantics play
-                     in data enrichment for data science; (L2) to review advantages and limitations of tools for semantic enrichment available 
-                     today and of research work relevant to this specific task; (L3) to provide a practical dive into the creation of semantic 
-                     data enrichment transformations with Grafterizer and ASIA, two integrated tools that support the interactive specification 
-                     of these transformations and their scalable execution on large datasets, as well as into the usage of the enriched data to 
-                     train predictive models with the QMiner tool.</p>
-                <p>In relation to L1, we will use examples and use cases from data science projects developed in two industry-driven H2020 
+                <h2 class="content-subsection"> Objectives </h2>
+                <p>This tutorial has three main learning objectives:</p> 
+                <ol>
+                    <li class="p-li">
+                        to provide an in-depth understanding of the role that semantics play in data enrichment for data science;
+                    </li>
+                    <li class="p-li">
+                        to review advantages and limitations of tools for semantic enrichment available today and of research work relevant
+                            to this specific task;
+                    </li>
+                    <li class="p-li">
+                        to provide a practical dive into the creation of semantic data enrichment transformations with Grafterizer and ASIA, 
+                        two integrated tools that support the interactive specification  of these transformations and their scalable execution 
+                        on large datasets, as well as into the usage of the enriched data to  train predictive models with the QMiner tool.
+                    </li>
+                </ol>
+                <p>In relation to 1., we will use examples and use cases from data science projects developed in two industry-driven H2020 
                     innovation projects, EW-Shopp (www.ew-shopp.eu) and euBusinessGraph (www.eubusinessgraph.eu), which target the development 
                     of data-driven innovative services in domains such as digital marketing, eCommerce, and business reporting. In relation to
-                    L2, we will discuss the limitations of the approaches based on ad-hoc coding and other semantic agnostic data transformation 
+                    2., we will discuss the limitations of the approaches based on ad-hoc coding and other semantic agnostic data transformation 
                     technologies to deliver data-scientist-friendly solutions. In addition we will discuss research work and prototypes developed 
                     in the semantic web, which addressed some of the challenges that a data-scientist-friendly solution should solve, and their
-                     current limitations (e.g., scalability, support for interaction, etc.). In relation to L3, we will provide an hands-on session
+                     current limitations (e.g., scalability, support for interaction, etc.). In relation to 3., we will provide an hands-on session
                       to enrich (anonimized) data from a digital marketing agency, which wants to estimate the impact of weather on the impressions 
                       of the ads it manages in its campaigns. We will show how to enrich the source datasets with spatial coordinates extracted from
                        Geonames, our "bridge", to eventually fetch data from a weather API. Finally, we will show how to use the enriched data to
@@ -120,50 +129,48 @@
     </section>
         <!-- Program Section -->
     <section id="program" class="container content-section">
-        <div class="container content-section">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Program</h2>
-                    <p>The tutorial will be a half-day tutorial, requiring approximately three hours including presentations 
-                        and a hands-on section. The draft schedule proposed for the tutorial is the following:</p>
-                </div>
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Program</h2>
+                <p>The tutorial will be a half-day tutorial, requiring approximately three hours including presentations 
+                    and a hands-on section. The draft schedule proposed for the tutorial is the following:</p>
             </div>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <ul class="timeline">
-                        <li>
-                            <h4>Data enrichment for data science 
-                                    <span class="badge"><i class="fa fa-clock-o"></i> 45 min</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <ul class="timeline">
+                    <li>
+                        <h4>Data enrichment for data science 
+                                <span class="badge"><i class="fa fa-clock-o"></i> 45 min</span>
+                            </h4>
+                        <p>Topics: challenges; semantics technologies as key enablers; 
+                            analytics with enriched data: use cases from industry-driven data science projects.</p>
+                    </li>
+                    <li>
+                        <h4>State-of-the-art: semantic data enrichment for data science 
+                                <span class="badge"><i class="fa fa-clock-o"></i> 45 min</span>
+                            </h4>
+                            <p>Topics: semantic table annotation tools and techniques; doing it with OpenRefine: 
+                                lessons learned and limitations; data enrichment with batch pipelines: lessons learned and limitations;
+                                    user-driven data enrichment at scale: the Grafterizer/ASIA approach; QMiner and data 
+                                    analytics on top of enriched data.</p>
+                    </li>
+                    <li>
+                            <h4>A toolkit for user-driven data enrichment at scale endowed with robust analytical modeling 
+                                    <span class="badge"><i class="fa fa-clock-o"></i> 30 min</span>
                                 </h4>
-                            <p>Topics: challenges; semantics technologies as key enablers; 
-                                analytics with enriched data: use cases from industry-driven data science projects.</p>
-                        </li>
-                        <li>
-                            <h4>State-of-the-art: semantic data enrichment for data science 
-                                    <span class="badge"><i class="fa fa-clock-o"></i> 45 min</span>
+                            <p>Topics: the Grafterizer/ASIA data transformation tool: cleaning, annotating 
+                                and enriching data; QMiner: data analytics on top of enriched data.</p>
+                    </li>
+                    <li>
+                            <h4>Hands-on session: digital marketing data enrichment with weather data and analytical modelling 
+                                    <span class="badge"><i class="fa fa-clock-o"></i> 60 min</span>
                                 </h4>
-                                <p>Topics: semantic table annotation tools and techniques; doing it with OpenRefine: 
-                                    lessons learned and limitations; data enrichment with batch pipelines: lessons learned and limitations;
-                                        user-driven data enrichment at scale: the Grafterizer/ASIA approach; QMiner and data 
-                                        analytics on top of enriched data.</p>
-                        </li>
-                        <li>
-                                <h4>A toolkit for user-driven data enrichment at scale endowed with robust analytical modeling 
-                                        <span class="badge"><i class="fa fa-clock-o"></i> 30 min</span>
-                                    </h4>
-                                <p>Topics: the Grafterizer/ASIA data transformation tool: cleaning, annotating 
-                                    and enriching data; QMiner: data analytics on top of enriched data.</p>
-                        </li>
-                        <li>
-                                <h4>Hands-on session: digital marketing data enrichment with weather data and analytical modelling 
-                                        <span class="badge"><i class="fa fa-clock-o"></i> 60 min</span>
-                                    </h4>
-                                <p>Environment set up; design of the data transformation workflows with Grafterizer/ASIA; 
-                                    batch execution of the transformations on a larger data set; training the predictive model with QMiner; deployment 
-                                    of the predictive model.</p>
-                        </li>
-                    </ul>
-                </div>
+                            <p>Environment set up; design of the data transformation workflows with Grafterizer/ASIA; 
+                                batch execution of the transformations on a larger data set; training the predictive model with QMiner; deployment 
+                                of the predictive model.</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -267,7 +274,7 @@
             </div>
             <div class="col-md-2">
                 <div class="single-team">
-                    <img src="http://infinityflamesoft.com/html/halim-preview/assets/img/team/2.jpg" alt="">
+                    <img src="img/aljaz.jpg" alt="">
                     <div class="team-hover">
                        <div class="team-content">
                           <h4>Aljaž Košmerlj <span>PhD</span></h4>
@@ -291,18 +298,26 @@
                     <h2>Media</h2>
                     <p> See our tools in action!</p>
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-6">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/6b8t8iM_7ZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                     
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6b8t8iM_7ZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                     
                             </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/liA0ahRj9Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
         <!-- Download Section -->
-    <section id="resources" class="content-section text-center">
+    <section id="resources" class="content-subsection text-center">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-10 col-lg-offset-1">
