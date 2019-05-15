@@ -76,6 +76,7 @@ a:focus {
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
+    height: auto;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -157,6 +158,7 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
+    margin-top: 35px;
     font-size: 40px;
 }
 
@@ -259,6 +261,10 @@ a:focus {
 
 .content-subsection {
     padding-top: 75px;
+}
+
+.content-slides {
+    padding: 20px;
 }
 
 .download-section {
